@@ -1,166 +1,158 @@
 <!doctype html>
 <html lang="ca">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title data-i18n="meta_title">Laura Graells · Portfolio</title>
-  <meta name="description" content="Laura Graells · ServiceNow Developer (CSA, ITIL4) · Program Manager (PMP, Scrum Master) · ITSM Automation · Applied AI & Automation." />
-  <link rel="stylesheet" href="styles.css" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Laura Graells — Program Management, traçabilitat i IA aplicada</title>
+<meta name="description" content="Vint anys fent que les decisions es puguin demostrar: acreditació sanitària, traçabilitat industrial, PMO, ITIL4 i ara l'AI Act. Program Manager (PMP) i ServiceNow Developer (CSA).">
+<meta property="og:title" content="Laura Graells — Program Management, traçabilitat i IA aplicada">
+<meta property="og:description" content="Vint anys fent que les decisions es puguin demostrar. PMO, governança d'IA i ServiceNow.">
+<meta property="og:type" content="profile">
+<style>
+:root{--ink:#0f172a;--mut:#64748b;--line:#e2e8f0;--bg:#ffffff;--soft:#f8fafc;--acc:#1d4ed8;--acc2:#0891b2}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Inter,sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:860px;margin:0 auto;padding:0 1.25rem}
+a{color:var(--acc)}
+header.top{border-bottom:1px solid var(--line);background:var(--soft)}
+.hrow{display:flex;flex-wrap:wrap;gap:1rem;align-items:center;justify-content:space-between;padding:1.1rem 0}
+.name{font-size:1.25rem;font-weight:700;margin:0}
+.tag{color:var(--mut);font-size:.9rem;margin:.15rem 0 0}
+.chips{display:flex;gap:.35rem}
+.chip{border:1px solid var(--line);background:#fff;border-radius:999px;padding:.25rem .7rem;font-size:.82rem;cursor:pointer;color:var(--mut)}
+.chip[aria-pressed="true"]{background:var(--ink);color:#fff;border-color:var(--ink)}
+.hero{padding:3rem 0 2.4rem}
+.hero h2{font-size:1.9rem;line-height:1.25;margin:0 0 1rem;letter-spacing:-.01em}
+.hero p{font-size:1.06rem;color:#334155;margin:0 0 1rem}
+.btns{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.3rem}
+.btn{display:inline-block;border-radius:8px;padding:.55rem 1.1rem;font-size:.92rem;text-decoration:none;font-weight:500}
+.btn.p{background:var(--ink);color:#fff}
+.btn.s{border:1px solid var(--line);color:var(--ink)}
+section{padding:2.4rem 0;border-top:1px solid var(--line)}
+h3.sec{font-size:.8rem;letter-spacing:.09em;text-transform:uppercase;color:var(--acc2);margin:0 0 .4rem;font-weight:700}
+h4.secT{font-size:1.4rem;margin:0 0 1.2rem;letter-spacing:-.01em}
+.lead{color:#334155;margin:-.7rem 0 1.4rem}
+.thread{list-style:none;padding:0;margin:0;border-left:2px solid var(--line)}
+.thread li{position:relative;padding:0 0 1.3rem 1.3rem}
+.thread li::before{content:"";position:absolute;left:-7px;top:.55rem;width:12px;height:12px;border-radius:50%;background:var(--acc2);border:2px solid #fff}
+.thread b{display:block;font-size:.98rem}
+.thread span{color:var(--mut);font-size:.86rem}
+.thread p{margin:.25rem 0 0;color:#334155;font-size:.95rem}
+.case{border:1px solid var(--line);border-radius:12px;padding:1.3rem 1.4rem;margin-bottom:1rem;background:#fff}
+.case .m{font-size:.82rem;color:var(--mut);margin:0 0 .35rem}
+.case h5{margin:0 0 .6rem;font-size:1.1rem}
+.case p{margin:0 0 .7rem;font-size:.96rem;color:#334155}
+.tags{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.8rem}
+.tags span{background:var(--soft);border:1px solid var(--line);border-radius:999px;padding:.2rem .65rem;font-size:.8rem;color:#475569}
+.cav{font-size:.85rem;color:var(--mut);font-style:italic;margin-top:.6rem}
+.g2{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:.9rem}
+.mini{border:1px solid var(--line);border-radius:12px;padding:1.1rem 1.2rem;background:#fff}
+.mini h5{margin:0 0 .4rem;font-size:1rem}
+.mini p{margin:0;font-size:.92rem;color:#334155}
+ul.plain{list-style:none;padding:0;margin:0}
+ul.plain li{padding:.45rem 0;border-bottom:1px dashed var(--line);font-size:.95rem}
+ul.plain li:last-child{border:none}
+ul.plain b{font-weight:600}
+ul.plain i{font-style:normal;color:var(--mut);font-size:.86rem;display:block}
+footer{border-top:1px solid var(--line);background:var(--soft);padding:1.6rem 0;color:var(--mut);font-size:.86rem}
+@media(max-width:600px){.hero h2{font-size:1.55rem}}
+</style>
 </head>
+<body>
 
-<body id="top">
-  <header class="wrap header">
-    <div class="brand">
-      <div class="avatar" aria-hidden="true">LG</div>
-      <div>
-        <h1 class="name">Laura Graells</h1>
-        <p class="tagline" data-i18n="tagline">
-          ServiceNow Developer (CSA, ITIL4) · Program Manager (PMP, Scrum Master) · ITSM Automation · Applied AI & Automation
-        </p>
-      </div>
+<header class="top"><div class="wrap hrow">
+  <div><p class="name">Laura Graells</p><p class="tag" data-k="tag"></p></div>
+  <nav class="chips" aria-label="Language">
+    <button class="chip" data-lang="ca">CA</button>
+    <button class="chip" data-lang="es">ES</button>
+    <button class="chip" data-lang="en">EN</button>
+    <button class="chip" data-lang="fr">FR</button>
+  </nav>
+</div></header>
+
+<main class="wrap">
+
+  <div class="hero">
+    <h2 data-k="h1"></h2>
+    <p data-k="lede1"></p>
+    <p data-k="lede2"></p>
+    <div class="btns">
+      <a class="btn p" href="https://www.linkedin.com/in/lauragraells" rel="noopener" target="_blank">LinkedIn</a>
+      <a class="btn s" href="assets/CV.pdf" data-k="cv"></a>
+      <a class="btn s" href="mailto:garidaina@gmail.com" data-k="mail"></a>
     </div>
+  </div>
 
-    <div class="top-actions">
-      <nav class="lang" aria-label="Language">
-        <button class="chip" data-lang="ca">CA</button>
-        <button class="chip" data-lang="es">ES</button>
-        <button class="chip" data-lang="en">EN</button>
-        <button class="chip" data-lang="fr">FR</button>
-      </nav>
-      <a class="btn" href="#contact" data-i18n="cta_contact">Contacte</a>
+  <section>
+    <h3 class="sec" data-k="s_thread"></h3>
+    <h4 class="secT" data-k="t_thread"></h4>
+    <p class="lead" data-k="l_thread"></p>
+    <ul class="thread" id="thread"></ul>
+  </section>
+
+  <section>
+    <h3 class="sec" data-k="s_cases"></h3>
+    <h4 class="secT" data-k="t_cases"></h4>
+    <p class="lead" data-k="l_cases"></p>
+    <div id="cases"></div>
+  </section>
+
+  <section>
+    <h3 class="sec" data-k="s_ai"></h3>
+    <h4 class="secT" data-k="t_ai"></h4>
+    <p class="lead" data-k="l_ai"></p>
+    <div class="g2" id="ai"></div>
+  </section>
+
+  <section>
+    <h3 class="sec" data-k="s_exp"></h3>
+    <h4 class="secT" data-k="t_exp"></h4>
+    <ul class="plain" id="exp"></ul>
+  </section>
+
+  <section>
+    <h3 class="sec" data-k="s_edu"></h3>
+    <h4 class="secT" data-k="t_edu"></h4>
+    <ul class="plain" id="edu"></ul>
+  </section>
+
+  <section>
+    <h3 class="sec" data-k="s_contact"></h3>
+    <h4 class="secT" data-k="t_contact"></h4>
+    <p class="lead" data-k="l_contact"></p>
+    <div class="btns">
+      <a class="btn p" href="mailto:garidaina@gmail.com" data-k="mail"></a>
+      <a class="btn s" href="https://www.linkedin.com/in/lauragraells" rel="noopener" target="_blank">LinkedIn</a>
     </div>
-  </header>
+  </section>
 
-  <main class="wrap">
-    <section class="card hero">
-      <h2 data-i18n="hero_title">Perfil</h2>
-      <p data-i18n="hero_body">
-        ServiceNow Developer & Program Manager amb 20 anys d’experiència en delivery IT i transformació de negoci.
-        Certificada CSA i ITIL 4, enfocada a IT Service Management (ITSM) i automatització (Flow Designer, Business Rules, UI Policies, Service Catalog).
-        Actualment aprofundint en Reporting, Predictive Intelligence i explorant Now Assist i AI Agents per ampliar automatitzacions.
-        En paral·lel, estic cursant un Màster d’IA aplicada i automatitzacions (amb focus en Machine Learning, Deep Learning i Responsible & Ethical AI).
-      </p>
+</main>
 
-      <div class="hero-links">
-        <a class="link" href="https://www.linkedin.com/in/lauragraells" target="_blank" rel="noreferrer" data-i18n="link_linkedin">LinkedIn</a>
-        <a class="link" href="assets/CV.pdf" target="_blank" rel="noreferrer" data-i18n="link_cv">Descarrega CV</a>
-        <a class="link" href="#work" data-i18n="link_work">Veure automatitzacions</a>
-      </div>
-    </section>
+<footer><div class="wrap">© <span id="yr"></span> Laura Graells</div></footer>
 
-    <section class="grid">
-      <section class="card">
-        <h2 data-i18n="focus_title">Focus actual</h2>
-        <ul class="bullets">
-          <li data-i18n="focus_1">ServiceNow: desenvolupament, configuració i optimització d’ITSM</li>
-          <li data-i18n="focus_2">Automatització: fluxos end-to-end, validacions, controls i UX</li>
-          <li data-i18n="focus_3">Dades i analítica: reporting, KPIs i iniciatives amb Predictive Intelligence</li>
-        </ul>
-      </section>
-
-      <section class="card">
-        <h2 data-i18n="strengths_title">Punts forts</h2>
-        <ul class="bullets">
-          <li data-i18n="str_1">Traducció negoci ↔ tècnic i alineació amb ITIL 4</li>
-          <li data-i18n="str_2">Entrega fiable: stakeholders globals, risc, planificació i execució</li>
-          <li data-i18n="str_3">Orientació a valor: menys tasques manuals, millor traçabilitat i experiència d’usuari</li>
-        </ul>
-      </section>
-    </section>
-
-    <section id="work" class="card">
-      <h2 data-i18n="work_title">Automatitzacions i millores (selecció)</h2>
-
-      <div class="work-item">
-        <h3 data-i18n="w1_title">ITSM workflow optimization (Incident/Request/Change)</h3>
-        <p data-i18n="w1_body">
-          Millora de fluxos i formularis, regles de negoci i polítiques UI per reduir fricció, errors i reassignacions.
-        </p>
-        <p class="meta"><span data-i18n="meta_tech">Tech</span>: ServiceNow · Flow Designer · Business Rules · UI Policies</p>
-        <p class="meta"><span data-i18n="meta_impact">Impacte</span>: <span data-i18n="w1_impact">millor consistència i velocitat operativa</span></p>
-      </div>
-
-      <div class="work-item">
-        <h3 data-i18n="w2_title">Catàleg de serveis i automatització de sol·licituds</h3>
-        <p data-i18n="w2_body">
-          Disseny d’items de catàleg amb validacions, aprovacions i tasques automàtiques per estandarditzar el lliurament.
-        </p>
-        <p class="meta"><span data-i18n="meta_tech">Tech</span>: ServiceNow · Service Catalog</p>
-        <p class="meta"><span data-i18n="meta_impact">Impacte</span>: <span data-i18n="w2_impact">menys manualitat i més traçabilitat</span></p>
-      </div>
-
-      <div class="work-item">
-        <h3 data-i18n="w3_title">Reporting & dashboards per decisions</h3>
-        <p data-i18n="w3_body">
-          Construcció de reports i dashboards per visibilitat d’operació, adopció i qualitat de servei; suport a KPIs.
-        </p>
-        <p class="meta"><span data-i18n="meta_tech">Tech</span>: ServiceNow · Reports · Dashboards</p>
-        <p class="meta"><span data-i18n="meta_impact">Impacte</span>: <span data-i18n="w3_impact">insights accionables i millor governança</span></p>
-      </div>
-
-      <div class="work-item">
-        <h3 data-i18n="w4_title">Categorització i analítica amb Predictive Intelligence</h3>
-        <p data-i18n="w4_body">
-          Aprenentatge i aplicació de capacitats de classificació per millorar categorització d’incidents i analítica operativa.
-        </p>
-        <p class="meta"><span data-i18n="meta_tech">Tech</span>: ServiceNow · Predictive Intelligence</p>
-        <p class="meta"><span data-i18n="meta_impact">Impacte</span>: <span data-i18n="w4_impact">millor triatge i dades més netes</span></p>
-      </div>
-
-      <div class="work-item">
-        <h3 data-i18n="w5_title">Experimentació amb Now Assist i AI Agents</h3>
-        <p data-i18n="w5_body">
-          Exploració de Skill Kit i Context Menu per ampliar automatització i assistència en processos ITSM (en entorn controlat).
-        </p>
-        <p class="meta"><span data-i18n="meta_tech">Tech</span>: ServiceNow · Now Assist · AI Agents</p>
-        <p class="meta"><span data-i18n="meta_impact">Impacte</span>: <span data-i18n="w5_impact">base per casos d’ús d’assistència i automatització</span></p>
-      </div>
-
-      <div class="divider"></div>
-    </section>
-
-    <section class="grid">
-      <section class="card">
-        <h2 data-i18n="background_title">Experiència (resum)</h2>
-        <ul class="bullets">
-          <li data-i18n="bg_1">ServiceNow Developer & Program Manager (2023–avui) · desenvolupament i automatització ITSM</li>
-          <li data-i18n="bg_2">Global IT Program Manager (2021–2023) · rollout global de ServiceNow, migració i estandardització</li>
-          <li data-i18n="bg_3">Project/Program Management en manufacturing (MES Siemens SIMATIC IT), transport i healthcare</li>
-        </ul>
-      </section>
-
-      <section class="card">
-        <h2 data-i18n="training_title">Formació i certificacions</h2>
-        <ul class="bullets">
-          <li data-i18n="tr_1">ServiceNow Certified System Administrator (CSA)</li>
-          <li data-i18n="tr_2">ITIL 4 Foundation · Scrum Master · PMP</li>
-          <li data-i18n="tr_3">Màster d’IA aplicada i automatitzacions (en curs) · ML, DL i Responsible & Ethical AI</li>
-        </ul>
-      </section>
-    </section>
-
-    <section id="contact" class="card">
-      <h2 data-i18n="contact_title">Contacte</h2>
-      <p data-i18n="contact_body">
-        Per networking, col·laboracions o intercanvi d’idees sobre automatització i IA aplicada:
-      </p>
-      <div class="contact">
-        <a class="btn" href="mailto:garidaina@gmail.com" data-i18n="contact_email">Enviar email</a>
-        <a class="btn secondary" href="https://www.linkedin.com/in/lauragraells" target="_blank" rel="noreferrer" data-i18n="contact_linkedin">LinkedIn</a>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <span>© <span id="year"></span> Laura Graells</span>
-      <span class="dot">·</span>
-      <a class="small" href="#top" data-i18n="back_top">Tornar a dalt</a>
-    </footer>
-  </main>
-
-  <script src="i18n.js"></script>
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+<script src="i18n.js"></script>
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+function esc(s){return s;}
+function render(l){
+  const d=T[l]||T.en;
+  document.documentElement.lang=l;
+  document.title=d.meta;
+  const md=document.querySelector('meta[name=description]'); if(md)md.content=d.metad;
+  document.querySelectorAll('[data-k]').forEach(e=>{const v=d[e.dataset.k]; if(v!==undefined)e.innerHTML=v;});
+  document.getElementById('thread').innerHTML=d.thread.map(x=>'<li><b>'+x[0]+'</b><span>'+x[1]+'</span><p>'+x[2]+'</p></li>').join('');
+  document.getElementById('cases').innerHTML=d.cases.map(c=>'<div class="case"><p class="m">'+c.m+'</p><h5>'+c.h+'</h5>'+c.p.map(p=>'<p>'+p+'</p>').join('')+'<div class="tags">'+c.t.map(t=>'<span>'+t+'</span>').join('')+'</div>'+(c.cav?'<p class="cav">'+c.cav+'</p>':'')+'</div>').join('');
+  document.getElementById('ai').innerHTML=d.ai.map(a=>'<div class="mini"><h5>'+a[0]+'</h5><p>'+a[1]+'</p></div>').join('');
+  document.getElementById('exp').innerHTML=d.exp.map(e=>'<li><b>'+e[0]+'</b><i>'+e[1]+'</i></li>').join('');
+  document.getElementById('edu').innerHTML=d.edu.map(e=>'<li><b>'+e[0]+'</b><i>'+e[1]+'</i></li>').join('');
+  document.querySelectorAll('.chip').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.lang===l)));
+  try{localStorage.setItem('lg_lang',l)}catch(e){}
+}
+document.querySelectorAll('.chip').forEach(b=>b.addEventListener('click',()=>render(b.dataset.lang)));
+const q=new URLSearchParams(location.search).get('lang');
+let init=q||(()=>{try{return localStorage.getItem('lg_lang')}catch(e){return null}})();
+if(!init){const n=(navigator.language||'en').slice(0,2); init=['ca','es','en','fr'].includes(n)?n:'en';}
+render(['ca','es','en','fr'].includes(init)?init:'en');
+</script>
 </body>
 </html>
-<!-- redeploy -->
