@@ -78,7 +78,7 @@ footer{border-top:1px solid var(--line);background:var(--soft);padding:1.6rem 0;
     <p data-k="lede2"></p>
     <div class="btns">
       <a class="btn p" href="https://www.linkedin.com/in/lauragraells" rel="noopener" target="_blank">LinkedIn</a>
-      <a class="btn s" href="assets/CV.pdf" data-k="cv"></a>
+      <a class="btn s" id="cvlink" href="assets/CV-EN.pdf" data-k="cv"></a>
       <a class="btn s" href="mailto:garidaina@gmail.com" data-k="mail"></a>
     </div>
   </div>
@@ -145,6 +145,7 @@ function render(l){
   document.getElementById('ai').innerHTML=d.ai.map(a=>'<div class="mini"><h5>'+a[0]+'</h5><p>'+a[1]+'</p></div>').join('');
   document.getElementById('exp').innerHTML=d.exp.map(e=>'<li><b>'+e[0]+'</b><i>'+e[1]+'</i></li>').join('');
   document.getElementById('edu').innerHTML=d.edu.map(e=>'<li><b>'+e[0]+'</b><i>'+e[1]+'</i></li>').join('');
+  document.getElementById('cvlink').href='assets/CV-'+l.toUpperCase()+'.pdf';
   document.querySelectorAll('.chip').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.lang===l)));
   try{localStorage.setItem('lg_lang',l)}catch(e){}
 }
